@@ -1,13 +1,20 @@
 $(window).on('load', function () {
-    $(".loading").fadeOut(1000)
+    $(".loading").fadeOut(500)
     $(".content").show()
 })
 
-// $("#submit").click(function () {
-//         alert("Message Sended")
-//     })
-
 $(document).ready(function () {
+    
+        $(window).scroll(function(){
+          var scroll = $(window).scrollTop();
+            if (scroll > 54) {
+              $("#header-section").css("background-color" , "#6c757d");
+            }
+      
+            else{
+                $("#header-section").css("background" , "transparent");   
+            }
+        })
 
     $("#change-theme-btn").click(function () {
         $("body").toggleClass("light-theme")
