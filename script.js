@@ -4,17 +4,16 @@ $(window).on('load', function () {
 })
 
 $(document).ready(function () {
-    
-        $(window).scroll(function(){
-          var scroll = $(window).scrollTop();
-            if (scroll > 54) {
-              $("#header-section").css("background-color" , "#6c757d");
-            }
-      
-            else{
-                $("#header-section").css("background" , "transparent");   
-            }
-        })
+
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 54) {
+            $("#header-section").css("background-color", "#6c757d");
+        }
+        else {
+            $("#header-section").css("background", "transparent");
+        }
+    })
 
     $("#change-theme-btn").click(function () {
         $("body").toggleClass("light-theme")
