@@ -22,7 +22,7 @@ $(document).ready(function () {
         } else {
             $("#change-theme-btn").removeClass("fa-duotone fa-moon")
         }
-    });
+    })
 
 
     $(".form-section").click(function () {
@@ -31,7 +31,7 @@ $(document).ready(function () {
         } else {
             $(".form-section").css({ "color": "white" })
         }
-    });
+    })
 
     $("#submitform").validate({
         rules: {
