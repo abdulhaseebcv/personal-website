@@ -159,7 +159,10 @@ body {
 }
 
 .home-icon{
-    text-decoration: none;
+    color: var(--text-color);
+}
+
+.home-icon:hover{
     color: var(--text-color);
 }
 
@@ -167,7 +170,7 @@ body {
 .icon-link:hover {
     color: teal;
     background: white;
-    cursor: pointer;
+    cursor: pointer;;
 }
 
 .download-cv {
