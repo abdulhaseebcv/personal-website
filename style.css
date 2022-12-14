@@ -158,6 +158,12 @@ body {
     border-radius: 2px;
 }
 
+.home-icon{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
 .icon-link:hover {
     color: teal;
     background: white;
@@ -296,13 +302,13 @@ body {
 @media(max-width:992px) {
     #change-theme-btn {
         position: absolute;
-        top: 17px;
+        top: 40px;
         right: 53px;
     }
 
     .nav-toggle {
-
         border: 3px solid lightgray;
+        margin-top: 20px;
     }
 
 }
