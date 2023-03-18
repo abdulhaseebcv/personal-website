@@ -8,10 +8,10 @@ $(document).ready(function () {
     $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         if (scroll > 54) {
-            $("#header-section").css("background-color", "#6c757d");
+            $("#header-section").css("background-color", "#485461");
         }
         else {
-            $("#header-section").css("background", "transparent");
+            $("#header-section").css("background", "none");
         }
     })
 

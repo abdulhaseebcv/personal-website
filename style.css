@@ -7,7 +7,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 :root {
     --text-color: #ffffff;
     --border-background: #22333b;
@@ -254,6 +253,9 @@ body {
 .card-contact {
     background-color: var(--border-background);
     height: 11.8rem;
+}
+.card-contact p{
+    line-height: 1;
 }
 
 .icon-contact {
