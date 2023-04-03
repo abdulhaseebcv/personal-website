@@ -1,3 +1,4 @@
+
 $(window).on('load', function () {
     $(".loading").fadeOut(500)
     $(".content").show()
@@ -33,25 +34,67 @@ $(document).ready(function () {
         }
     })
 
-    $("#submitform").validate({
-        rules: {
-            fullname: {
-                required: true,
-            },
-            subject: {
-                required: true,
-            },
-            email: {
-                required: true,
-                email: true
-            },
-            message: {
-                required: true,
-            }
-        }
-    })
+    // $("#submitform").validate({
+    //     // validateForm = true,
+    //     rules: {
+    //         fullname: {
+    //             required: true,
+    //         },
+    //         subject: {
+    //             required: true,
+    //         },
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         },
+    //         message: {
+    //             required: true,
+    //         }
+    //     }
+    // })
 
 })
+
+// <!-- contact form submission -->
+
+    $("#submitform").submit((e) => {
+        e.preventDefault()
+        $(document).ready(function () {
+            $("#submitform").validate({
+                // validateForm = true,
+                rules: {
+                    fullname: {
+                        required: true,
+                    },
+                    subject: {
+                        required: true,
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    message: {
+                        required: true,
+                    }
+                }
+            })
+        })
+        
+        $.ajax({
+            url: "https://script.google.com/macros/s/AKfycbxIxwNu8Dp8nxQoylu7WMPzP0XE517mwXHo21yA0ZWNAH6aK51HDX6BL4u1EfETwCb5/exec",
+            data: $("#submitform").serialize(),
+            method: "post",
+            success: function (response) {
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error: function (err) {
+                alert("Something Error")
+
+            }
+        })
+    })
 
 
 

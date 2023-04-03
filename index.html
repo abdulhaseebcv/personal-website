@@ -175,6 +175,37 @@
                         </div>
                     </div>
                 </div>
+
+                
+                <div class="row align-items-center justify-content-center">
+                    <div class=" col-lg-2 col-md-2 col-4 col-sm-4 mt-3">
+                        <div class="card card-skills shadow border-0">
+                            <img src="assets/images/nodejs.png" class="img-fluid img m-auto mt-1 card-img-top"
+                                alt="...">
+                            <div class="card-body p-2">
+                                <p class="card-text text-black text-center">Node JS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-4 col-sm-4 mt-3">
+                        <div class="card card-skills shadow border-0">
+                            <img src="assets/images/mongodb.png" class=" img-fluid img m-auto mt-1 card-img-top"
+                                alt="...">
+                            <div class="card-body p-2">
+                                <p class="card-text text-black text-center">MongoDB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-4 col-sm-4 mt-3">
+                        <div class="card card-skills shadow border-0">
+                            <img src="assets/images/git.png" class=" img-fluid img m-auto mt-1 card-img-top"
+                                alt="...">
+                            <div class="card-body p-2">
+                                <p class="card-text text-black text-center">Git</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!--end--skills-section-->
@@ -354,28 +385,6 @@
         crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
-
-
-    <!-- contact form submission -->
-    <script>
-        $("#submitform").submit((e) => {
-            e.preventDefault()
-            $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbxIxwNu8Dp8nxQoylu7WMPzP0XE517mwXHo21yA0ZWNAH6aK51HDX6BL4u1EfETwCb5/exec",
-                data: $("#submitform").serialize(),
-                method: "post",
-                success: function (response) {
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error: function (err) {
-                    alert("Something Error")
-
-                }
-            })
-        })
-    </script>
 
 </body>
 
