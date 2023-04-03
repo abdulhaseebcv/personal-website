@@ -231,6 +231,9 @@ body {
 .card-project:hover .img-project {
     opacity: 0.3;
 }
+.card-project:hover .img-calculator-todo {
+    opacity: 0.3;
+}
 
 .content-project {
     color: white;
