@@ -10,16 +10,19 @@
 html {
     scroll-behavior: smooth;
 }
+
 :root {
     --text-color: #ffffff;
     --border-background: #22333b;
     --background-color: #041c32;
+    --border-color:#fff;
 }
 
 .light-theme {
     --text-color: black;
     --background-color: #ffffff;
     --border-background: #ffffff;
+    --border-color: teal;
 }
 
 body {
@@ -78,7 +81,7 @@ body {
     75% {
         transform: translate(-50%, -50%) rotate(360deg);
     }
-    
+
     100% {
         transform: translate(-50%, -50%) rotate(360deg);
     }
@@ -107,8 +110,8 @@ body {
     }
 }
 
-#header-section{
-    position:sticky;
+#header-section {
+    position: sticky;
     top: 0;
     z-index: 1;
 }
@@ -155,11 +158,11 @@ body {
     border-radius: 2px;
 }
 
-.home-icon{
+.home-icon {
     color: var(--text-color);
 }
 
-.home-icon:hover{
+.home-icon:hover {
     color: var(--text-color);
 }
 
@@ -167,7 +170,8 @@ body {
 .icon-link:hover {
     color: teal;
     background: white;
-    cursor: pointer;;
+    cursor: pointer;
+    ;
 }
 
 .download-cv {
@@ -183,7 +187,7 @@ body {
 }
 
 #home-section {
-    padding-top:6rem;
+    padding-top: 6rem;
 }
 
 .home-img {
@@ -201,6 +205,23 @@ body {
 
 #skills-section {
     padding-top: 2rem;
+    padding-bottom: 10px;
+}
+
+/* new code for skills */
+#skills-section .container {
+    gap: 10px;
+}
+
+#skills-section .container h6 {
+    min-width: 100px;
+    border: 1px solid var(--border-color);
+    border-radius: 7px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.7%;
 }
 
 #projects-section {
@@ -212,10 +233,10 @@ body {
 }
 
 
-.card-skills {
+/* .card-skills {
     height: 8.3rem;
     max-width: 10rem;
-}
+} */
 
 .img-project {
     width: 12.5rem;
@@ -231,6 +252,7 @@ body {
 .card-project:hover .img-project {
     opacity: 0.3;
 }
+
 .card-project:hover .img-calculator-todo {
     opacity: 0.3;
 }
@@ -245,7 +267,7 @@ body {
 }
 
 .card-project:hover {
-    background-color:teal;
+    background-color: teal;
 }
 
 .card-project:hover .content-project {
@@ -260,7 +282,8 @@ body {
     background-color: var(--border-background);
     height: 11.8rem;
 }
-.card-contact p{
+
+.card-contact p {
     line-height: 1;
 }
 
@@ -321,7 +344,7 @@ body {
 }
 
 @media(max-width:768px) {
-   
+
     .details {
         text-align: center;
     }
