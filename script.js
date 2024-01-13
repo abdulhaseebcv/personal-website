@@ -3,7 +3,7 @@ $(window).on('load', function () {
     setTimeout(() => {
         $(".loading").fadeOut(500)
         $(".content").show()
-    }, 1000);
+    }, 500);
 })
 
 $(document).ready(function () {
